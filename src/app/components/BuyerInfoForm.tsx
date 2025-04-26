@@ -482,7 +482,7 @@ const BuyerInfoForm = () => {
               transition={{ delay: 0.2 }}
             >
               <h1 className="text-3xl font-bold text-white">Thanks {formData.name}!</h1>
-              <p className="text-[#D1D5DB] text-lg">I'll review this and get back to you with business options tailored to your answers.</p>
+              <p className="text-[#D1D5DB] text-lg">I&apos;ll review this and get back to you with business options tailored to your answers.</p>
               
               <div className="pt-4 space-y-6">
                 <p className="text-white font-medium">Get in touch with me directly:</p>
@@ -530,7 +530,7 @@ const BuyerInfoForm = () => {
                     whileHover="hover"
                     whileTap="tap"
                   >
-                    I'll Do This Later
+                    I&apos;ll Do This Later
                   </motion.button>
                 </div>
               </div>
@@ -631,7 +631,7 @@ const BuyerInfoForm = () => {
                         ease: [0.645, 0.045, 0.355, 1]
                       }}
                     >
-                      Let's find your perfect business.
+                      Let&apos;s find your perfect business.
                     </motion.h2>
                     <motion.p 
                       className="text-[#D1D5DB] text-sm sm:text-base md:text-lg"
@@ -711,11 +711,11 @@ const BuyerInfoForm = () => {
                     {step === 2 && "About You"}
                     {step === 3 && "What Are You Looking For?"}
                     {step === 4 && "Where Would You Like It?"}
-                    {step === 5 && "What's Your Budget?"}
+                    {step === 5 && "What&apos;s Your Budget?"}
                     {step === 6 && "Experience & Background"}
                     {step === 7 && "Financial Snapshot"}
                     {step === 8 && "Fit & Personality"}
-                    {step === 9 && "Let's Stay Connected"}
+                    {step === 9 && "Let&apos;s Stay Connected"}
                   </motion.h2>
                 </motion.div>
 
@@ -827,7 +827,7 @@ const BuyerInfoForm = () => {
                           onChange={handleChange}
                           className="w-full bg-[#0E1A2B] border border-[#384352] p-4 rounded-xl text-white placeholder-[#D1D5DB] focus:outline-none focus:ring-2 focus:ring-[#F4C542] text-center shadow-inner transition-all duration-200 hover:border-[#F4C542]/50"
                         >
-                          <option value="">What's your budget range?</option>
+                          <option value="">What&apos;s your budget range?</option>
                           <option value="Under $100k">Under $100k</option>
                           <option value="$100k–$300k">$100k–$300k</option>
                           <option value="$300k–$700k">$300k–$700k</option>
@@ -860,7 +860,7 @@ const BuyerInfoForm = () => {
                           onChange={handleChange}
                           className="w-full bg-[#0E1A2B] border border-[#384352] p-4 rounded-xl text-white placeholder-[#D1D5DB] focus:outline-none focus:ring-2 focus:ring-[#F4C542] text-center shadow-inner transition-all duration-200 hover:border-[#F4C542]/50"
                         >
-                          <option value="">What's your current role?</option>
+                          <option value="">What&apos;s your current role?</option>
                           <option value="Business Owner">Business Owner</option>
                           <option value="Manager">Manager</option>
                           <option value="Employee">Employee</option>
@@ -988,7 +988,7 @@ const BuyerInfoForm = () => {
                           onChange={handleChange}
                           className="w-full bg-[#0E1A2B] border border-[#384352] p-4 rounded-xl text-white placeholder-[#D1D5DB] focus:outline-none focus:ring-2 focus:ring-[#F4C542] text-center shadow-inner transition-all duration-200 hover:border-[#F4C542]/50"
                         >
-                          <option value="">What's non-negotiable for you?</option>
+                          <option value="">What&apos;s non-negotiable for you?</option>
                           <option value="Location">Location</option>
                           <option value="Price">Price</option>
                           <option value="Industry">Industry</option>
@@ -1022,7 +1022,7 @@ const BuyerInfoForm = () => {
                           value={formData.nextStep}
                           onChange={(e) => {
                             handleChange(e);
-                            if (e.target.value === "I'd like to speak to Jack Crosti") {
+                            if (e.target.value === "I&apos;d like to speak to Jack Crosti") {
                               alert("Almost there! Just hit 'Submit My Profile' to move forward");
                             }
                           }}
@@ -1031,7 +1031,7 @@ const BuyerInfoForm = () => {
                           <option value="">What would you like to do next?</option>
                           <option value="Send me matching listings">Send me matching listings</option>
                           <option value="Help me shortlist">Help me shortlist</option>
-                          <option value="I'd like to speak to Jack Crosti">I'd like to speak to Jack Crosti</option>
+                          <option value="I&apos;d like to speak to Jack Crosti">I&apos;d like to speak to Jack Crosti</option>
                         </select>
                         {errors.nextStep && <p className="text-red-500 text-sm mt-1">This field is required</p>}
                       </div>
